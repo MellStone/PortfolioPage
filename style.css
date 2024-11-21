@@ -1,0 +1,81 @@
+/* General Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section */
+.hero {
+    text-align: center;
+    background: #222 url('Preview.png') no-repeat center/cover;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #f90;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#works .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#works .gallery-item {
+    width: 200px;
+    text-align: center;
+}
+
+#all-works .gallery-item {
+    width: 200px;
+    text-align: center;
+}
+
+#works img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#all-works img {
+    width: 100%;
+    crop: auto;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
