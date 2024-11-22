@@ -12,10 +12,10 @@ body {
 
 /* Header Section */
 .hero {
-    text-align: center;
+    text-align: left;
     background: #222 url('Preview.png') no-repeat center/cover;
     color: white;
-    padding: 50px 20px;
+    padding: 350px 20px;
 }
 
 .hero h1 {
@@ -44,6 +44,12 @@ section {
 }
 
 #works .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#all-works .gallery {
     display: flex;
     justify-content: center;
     gap: 10px;
