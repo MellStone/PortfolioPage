@@ -77,29 +77,29 @@
 
 <!-- Modal Script -->
 <script>
-    function openModal(element) {
-        const modal = document.getElementById('work-modal');
-        const imgSrc = element.querySelector('img').src;
-        const title = element.dataset.title;
-        const description = element.dataset.description;
+function openModal(element) {
+    const modal = document.getElementById('work-modal');
+    const imgSrc = element.querySelector('img').src;
+    const title = element.dataset.title;
+    const description = element.dataset.description;
 
-        document.getElementById('modal-image').src = imgSrc;
-        document.getElementById('modal-title').textContent = title;
-        document.getElementById('modal-description').textContent = description;
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
 
-        modal.style.display = 'block';
-    }
+    modalImage.src = imgSrc;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
 
-    document.querySelector('.close').onclick = function () {
-        document.getElementById('work-modal').style.display = 'none';
-    };
+    modal.style.display = 'flex'; // Показываем модальное окно
 
-    window.onclick = function (event) {
-        const modal = document.getElementById('work-modal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    };
+    // Анимация появления
+    const modalContent = document.querySelector('.modal-content');
+    modalContent.style.transform = 'translateY(-20px)';
+    setTimeout(() => {
+        modalContent.style.transform = 'translateY(0)';
+    }, 10);
+}
 </script>
 </body>
 </html>
