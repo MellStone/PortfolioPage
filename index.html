@@ -17,6 +17,9 @@
 
 <!-- Header Section -->
 <header class="hero">
+    <video autoplay muted loop id="background-video">
+        <source src="360Spin.mp4" type="video/mp4">
+    </video>
     <div class="hero-content">
         <div class="hero-left">
             <h1>Denys Zhernovyi</h1>
@@ -33,12 +36,28 @@
 <section id="works">
     <h2 data-aos="zoom-out" data-aos-offset="200">Professional Works</h2>
     <div class="gallery">
-        <div class="gallery-item" data-title="SCS: Secret Cleaning Service" data-description="Rubens Games project" onclick="openModal(this)" data-aos="zoom-in">
+        <div class="gallery-item" data-title="SCS: Secret Cleaning Service" data-description="" onclick="openModal(this)" data-aos="zoom-in">
             <img src="Preview.png" alt="Work 1">
             <p>SCS: Secret Cleaning Service, Rubens Games</p>
         </div>
-        <div class="gallery-item" data-title="Neo Tokyo: Exponential Reality" data-description="Neo-futuristic character for VR game" onclick="openModal(this)" data-aos="zoom-in">
-            <img src="Preview.png" alt="Work 2">
+        <div class="gallery-item"
+             data-title="Chesspeare"
+             data-description='<strong>\Chesspeare\</strong> is an academic project created during the second year of my university studies. I worked as a 3D character artist and was responsible for the full development cycle of five characters.<br><br>
+        My work included:<ul>
+        <li>Creating character concepts, focusing on their visual style and unique traits;</li>
+        <li>Developing high-poly and optimized 3D models;</li>
+        <li>Texturing using modern techniques (e.g., PBR);</li>
+        <li>Preparing characters for animation (rigging and skinning);</li>
+        <li>Crafting animations for gameplay.</li>
+    </ul>
+        This project allowed me to strengthen my skills in the full 3D production pipeline, collaborate within a team, and adapt to academic requirements. \"Chesspeare\" combines the strategic essence of chess with the captivating aesthetics of the Renaissance era, making the experience both engaging and diverse.'
+        onclick="openModal(this)">
+        <img src="Preview.png" alt="Chesspeare">
+        <p>Chesspeare</p>
+    </div>
+
+        <div class="gallery-item" data-title="Neo Tokyo: Exponential Reality" data-description="" onclick="openModal(this)" data-aos="zoom-in">
+            <img src="Portrait.0001.png" alt="Work 2">
             <p>Neo Tokyo: Exponential Reality</p>
         </div>
     </div>
@@ -49,9 +68,15 @@
     <h2 data-aos="fade-up">All Works</h2>
     <div class="masonry-gallery">
         <div class="masonry-item" data-aos="fade-up"><img src="Preview.png" alt="Work"></div>
-        <div class="masonry-item" data-aos="fade-up"><img src="Preview.png" alt="Work"></div>
-        <div class="masonry-item" data-aos="fade-up"><img src="Preview.png" alt="Work"></div>
-        <div class="masonry-item" data-aos="fade-up"><img src="Preview.png" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="Portrait.0001.png" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-up"><img src="mellst0ne-34-color-black-smoke-4k.jpg" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="denis-final-pose.jpg" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-up"><img src="Composite2.png" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="Front.png" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-up"><img src="LionFront.jpg" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="cote3.jpg" alt="Work"></div>   
+        <div class="masonry-item" data-aos="fade-up"><img src="mellst0ne-skull8k-blinn.jpg" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="denis-render-02.jpg" alt="Work"></div>
     </div>
 </section>
 
@@ -72,7 +97,10 @@
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 Denys Zhernovyi. All Rights Reserved.</p>
-    <a href="mailto:your.email@example.com">Contact Me</a>
+    <div class="social-links">
+        <a href="https://www.artstation.com/mellst0ne" target="_blank"><img src="artstation-icon.png" alt="ArtStation"></a>
+        <a href="https://www.linkedin.com/in/denys-zhernovyi/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
 </footer>
 
 <!-- Modal Script -->
