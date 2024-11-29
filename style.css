@@ -98,7 +98,7 @@ body {
 
 /* Modal */
 .modal {
-    display: none;
+    display: none; /* Скрыто по умолчанию */
     position: fixed;
     top: 0;
     left: 0;
@@ -106,7 +106,6 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    display: flex; /* Центрирование */
     align-items: center;
     justify-content: center;
 }

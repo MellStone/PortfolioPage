@@ -77,29 +77,41 @@
 
 <!-- Modal Script -->
 <script>
-function openModal(element) {
-    const modal = document.getElementById('work-modal');
-    const imgSrc = element.querySelector('img').src;
-    const title = element.dataset.title;
-    const description = element.dataset.description;
+    // Открытие модального окна при клике
+    function openModal(element) {
+        const modal = document.getElementById('work-modal');
+        const imgSrc = element.querySelector('img').src;
+        const title = element.dataset.title;
+        const description = element.dataset.description;
 
-    const modalImage = document.getElementById('modal-image');
-    const modalTitle = document.getElementById('modal-title');
-    const modalDescription = document.getElementById('modal-description');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
 
-    modalImage.src = imgSrc;
-    modalTitle.textContent = title;
-    modalDescription.textContent = description;
+        modalImage.src = imgSrc;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
 
-    modal.style.display = 'flex'; // Показываем модальное окно
+        modal.style.display = 'flex'; // Показываем модальное окно
+        const modalContent = document.querySelector('.modal-content');
+        modalContent.style.transform = 'translateY(-20px)';
+        setTimeout(() => {
+            modalContent.style.transform = 'translateY(0)';
+        }, 10);
+    }
 
-    // Анимация появления
-    const modalContent = document.querySelector('.modal-content');
-    modalContent.style.transform = 'translateY(-20px)';
-    setTimeout(() => {
-        modalContent.style.transform = 'translateY(0)';
-    }, 10);
-}
+    // Закрытие модального окна
+    document.querySelector('.close').addEventListener('click', () => {
+        document.getElementById('work-modal').style.display = 'none';
+    });
+
+    // Скрытие модального окна при клике вне его
+    window.addEventListener('click', (event) => {
+        const modal = document.getElementById('work-modal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 </script>
 </body>
 </html>
