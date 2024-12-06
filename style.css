@@ -20,15 +20,26 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    color-interpolation-filters: linearRGB;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* Полупрозрачный чёрный слой */
+    z-index: -1;
+}
+
 .hero {
     position: relative;
-    color: white;
+    color: #fbfbfb;
     text-align: left;
     padding: 50vh 10px; /* Центрирование */
 }
-    hero .btn {
+
+    .hero .btn {
     background: #fd9b06;
 }
 
@@ -37,6 +48,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 1;
 }
 
 .hero-left {
@@ -64,6 +76,16 @@ body {
     margin-bottom: 20px;
 }
 
+.btn {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff9900, #ff3300);
+}
+
 .hero .btn {
     padding: 10px 20px;
     background: #f90;
@@ -78,11 +100,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .gallery-item {
-    width: 200px;
+    width: 300px;
     text-align: center;
     cursor: pointer;
 }
@@ -131,14 +153,17 @@ body {
     display: flex;
     background: white;
     width: 70%; /* Уменьшение ширины */
-    max-height: 80vh; /* Ограничение высоты */
+    max-height: 120vh; /* Ограничение высоты */
     overflow-y: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-20px); /* Легкий сдвиг вниз */
-    transition: transform 0.3s ease-out; /* Анимация */
+    transform: scale(0.9); /* Легкий сдвиг вниз */
+    transition: transform 0.2s ease-out; /* Анимация */
 }
-
+.modal.open .modal-content {
+    opacity: 1;
+    transform: scale(1);
+}
 .modal-left {
     flex: 1;
     display: flex;
@@ -216,17 +241,23 @@ body {
     margin: 10px;
     padding: 10px 20px;
     border: none;
-    background: #fd9b06;
+    background: rgba(52, 46, 46, 0.51);
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 .close {
     position: absolute;
-    top: 10px; /* Опустили ниже */
-    right: 10px;
-    font-size: 24px;
-    color: white;
+    top: 15px;
+    right: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #fd9b06;
 }
 @media (max-width: 768px) {
     .hero {
@@ -268,7 +299,42 @@ body {
 }
 
 /* Carousel */
+.image-carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(10%);
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    opacity: 0.8;
+}
 
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8); /* Более тёмный при наведении */
+    transform: scale(1.1); /* Немного увеличиваем */
+}
+
+#prev-image {
+    left: 10px;
+}
+
+#next-image {
+    left: 45%; /* Сместим кнопку слева */
+    right: auto; /* Убираем правое выравнивание */
+}
 .carousel-buttons {
     display: flex;
     justify-content: space-between;

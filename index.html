@@ -17,9 +17,12 @@
 </script>
 
 <header class="hero">
-    <video autoplay muted loop id="background-video">
-        <source src="360Spin.mp4" type="video/mp4">
-    </video>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="360Spin.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div> <!-- Затемняющий слой -->
+    </div>
     <div class="hero-content">
         <div class="hero-left">
             <h1>Denys Zhernovyi</h1>
@@ -40,6 +43,12 @@
             <img src="character.png" alt="SCS: Secret Cleaning Service">
             <p>SCS: Secret Cleaning Service</p>
         </div>
+    </div>
+</section>
+
+<section id="passion-work">
+    <h2>Passion Works</h2>
+    <div class="gallery">
         <div class="gallery-item" data-aos="zoom-in" onclick="openModal(1)">
             <img src="this.png" alt="Chesspeare">
             <p>Chesspeare</p>
@@ -58,6 +67,8 @@
         <div class="masonry-item" data-aos="fade-up"><img src="Preview.png" alt="Work"></div>
         <div class="masonry-item" data-aos="fade-down"><img src="Portrait.0001.png" alt="Work"></div>
         <div class="masonry-item" data-aos="fade-up"><img src="mellst0ne-34-color-black-smoke-4k.jpg" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-down"><img src="this.png" alt="Work"></div>
+        <div class="masonry-item" data-aos="fade-up"><img src="character.png" alt="Work"></div>
         <div class="masonry-item" data-aos="fade-down"><img src="denis-final-pose.jpg" alt="Work"></div>
         <div class="masonry-item" data-aos="fade-up"><img src="Composite2.png" alt="Work"></div>
         <div class="masonry-item" data-aos="fade-down"><img src="Front.png" alt="Work"></div>
@@ -71,15 +82,25 @@
 <!-- Modal for Work Details -->
 <div id="work-modal" class="modal">
     <div class="modal-content">
-        <button class="prev">&laquo;</button>
+        <!-- Кнопка для предыдущего изображения -->
+        <button id="prev-image" class="carousel-btn">&laquo;</button>
+
+        <!-- Левая часть: карусель изображений -->
         <div class="modal-left">
             <img id="modal-image" src="" alt="Work Image">
         </div>
+
+        <!-- Кнопка для следующего изображения -->
+        <button id="next-image" class="carousel-btn">&raquo;</button>
+
+        <!-- Правая часть: заголовок и описание -->
         <div class="modal-right">
             <h3 id="modal-title">Work Title</h3>
             <p id="modal-description">Work Description</p>
         </div>
-        <button class="next">&raquo;</button>
+
+        <!-- Кнопка закрытия -->
+        <span id="close-modal" class="close">&times;</span>
     </div>
 </div>
 
