@@ -2,12 +2,12 @@
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     line-height: 1.6;
-    color: #333;
+    color: #222;
 }
 
 /* Header Section */
@@ -20,16 +20,20 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    color-interpolation-filters: linearRGB;
 }
 .hero {
     position: relative;
     color: white;
-    padding: 300px 20px;
+    text-align: left;
+    padding: 50vh 10px; /* Центрирование */
+}
+    hero .btn {
+    background: #fd9b06;
 }
 
-
 .hero-content {
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -208,7 +212,15 @@ body {
     color: #ff7f00;
 }
 
-
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #fd9b06;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .close {
     position: absolute;
     top: 10px; /* Опустили ниже */
@@ -218,7 +230,7 @@ body {
 }
 @media (max-width: 768px) {
     .hero {
-        padding: 150px 10px;
+        padding: 50vh 10px;
         background-size: cover;
     }
 
@@ -230,9 +242,22 @@ body {
         font-size: 0.9em;
         padding: 8px 16px;
     }
-
+    
+    .hero-right{
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .masonry-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
     .gallery {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
