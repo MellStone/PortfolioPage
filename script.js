@@ -1,6 +1,6 @@
 const works = [
     {
-        img: ["character.png", "Core.png", "Chest.png", "Hands.png", "Forearms.png", "Head.png", "Leg.png", "Rat.png"],
+        img: ["Resourses/character.png", "Resourses/Core.png", "Resourses/Chest.png", "Resourses/Hands.png", "Resourses/Forearms.png", "Resourses/Head.png", "Resourses/Leg.png", "Resourses/Rat.png"],
         title: "SCS: Secret Cleaning Service",
         description: `<p>Internship at Rubens Games with organic modeling for Unity-based projects.</p>
                     <p>For five months, I interned at **Rubens Games**, where my primary task was creating organic objects for a Unity-based project.</p>
