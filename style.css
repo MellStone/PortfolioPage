@@ -29,7 +29,7 @@ h2 {
 /* Header Section */
 
 #background-video {
-    background: radial-gradient(ellipse 70vh 80vw, white, #bdabe2);
+    background: radial-gradient(ellipse 50vh 80vw, white, black);
     position: absolute;
     align-content: center;
     width: 100%;
@@ -106,7 +106,7 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1em; 
 }
 
 #works, #passion-work, #all-works {
@@ -172,7 +172,7 @@ h2 {
     padding: 20px 5vw;
     background: white;
     width: 70%; /* Уменьшение ширины */
-    max-height: 80vh; /* Ограничение высоты */
+    max-height: 100vh; /* Ограничение высоты */
     overflow-y: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -185,6 +185,8 @@ h2 {
 }
 .modal-left {
     display: flex;
+    width: 70vw;
+    min-height: 80vh;
     align-items: center;
     justify-content: center;
     background-color: #342e2e;
@@ -192,8 +194,8 @@ h2 {
 }
 
 .modal-left img {
-    max-width: 100%;
-    max-height: 100%; /* Изображение не выходит за пределы */
+    max-width: 70vw;
+    max-height: 80vh; /* Изображение не выходит за пределы */
     border-radius: 8px;
 }
 
@@ -296,7 +298,7 @@ h2 {
         top: 0px;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.35); /* Полупрозрачный чёрный слой */
+        background: rgba(0, 0, 0, 0.15); /* Полупрозрачный чёрный слой */
         z-index: -1;
     }
     

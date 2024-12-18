@@ -16,7 +16,8 @@ const works = [
                       and honed my teamwork and adaptability skills in a professional game studio environment.</p>`
     },
     {
-        img: ["this.png", "queen_black.png", "queen_white.png", "queen_hp.png", "slon_blackwhite.png", "wieza_black.png", "wieza_white.png", "wieza_polycount.png", "wieza_uvs.png", "wieza_hp.png",],
+        img: ["Resourses/this.png", "Resourses/queen_black.png", "Resourses/queen_white.png", "Resourses/queen_hp.png", "Resourses/slon_blackwhite.png",
+            "Resourses/wieza_black.png", "Resourses/wieza_white.png", "Resourses/wieza_polycount.png", "Resourses/wieza_uvs.png", "Resourses/wieza_hp.png",],
         title: "Chesspeare",
         description: `<p> Chesspeare is an academic project created during the second year of my university studies.
                         I worked as a 3D character artist and was responsible for the full development cycle of five characters.</p>
@@ -32,11 +33,13 @@ const works = [
                         "Chesspeare" combines the strategic essence of chess with the captivating aesthetics of the Renaissance era, making the experience both engaging and diverse.</p>`
     },
     {
-        img: ["Portrait.0001.png", "mellst0ne-portrait-0000.jpg", "mellst0ne-details-0000.jpg", "mellst0ne-details-0003.jpg", "mellst0ne-details-0004.jpg", "mellst0ne-mayapolycount.jpg", "mellst0ne-mayauvs.jpg"],
+        img: ["Resourses/Portrait.0001.png", "Resourses/mellst0ne-portrait-0000.jpg", "Resourses/mellst0ne-details-0000.jpg", "Resourses/mellst0ne-details-0003.jpg", "Resourses/mellst0ne-details-0004.jpg",
+            "Resourses/mellst0ne-mayapolycount.jpg", "Resourses/mellst0ne-mayauvs.jpg"],
         title: "Neo Tokyo: Exponential Reality",
         description: `<p>This project has been one of the most time consuming and longest I have ever done.
         I had to redesign it from zero, and many times I had to start creating parts of it from over again because I was not satisfied with the previous ones. I encountered difficulties at almost every stage.
-            In addition, I also wanted to comply with all the requirements of the contest (in which I participated but something went wrong) Neo Tokyo: Exponential Reality, i.e. to fit everything into two texture sets of 4k size, maximum number of polygons 100k and that it would be rendered in real-time rendering. </p>`},
+            In addition, I also wanted to comply with all the requirements of the contest (in which I participated but something went wrong) Neo Tokyo: Exponential Reality,
+            i.e. to fit everything into two texture sets of 4k size, maximum number of polygons 100k and that it would be rendered in real-time rendering. </p>`},
 ];
 
 let currentIndex = 0;
