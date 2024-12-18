@@ -3,7 +3,7 @@ const works = [
         img: ["Resourses/character.png", "Resourses/Core.png", "Resourses/Chest.png", "Resourses/Hands.png", "Resourses/Forearms.png", "Resourses/Head.png", "Resourses/Leg.png", "Resourses/Rat.png"],
         title: "SCS: Secret Cleaning Service",
         description: `<p>Internship at Rubens Games with organic modeling for Unity-based projects.</p>
-                    <p>For five months, I interned at **Rubens Games**, where my primary task was creating organic objects for a Unity-based project.</p>
+                    <p>For five months, I interned at Rubens Games, where my primary task was creating organic objects for a Unity-based project.</p>
                     <p>One of my most notable accomplishments during the internship was the complete creation of the game’s main character. I handled the entire process:</p>
                      <ul>
                             <li>Designed the character concept, defining its visual style and details </li>

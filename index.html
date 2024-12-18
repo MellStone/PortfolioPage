@@ -36,17 +36,34 @@
 </header>
 
 <!-- Professional Works Section -->
-<section id="works">
+<section id="professional-works">
     <h2>Professional Works</h2>
-    <div class="gallery">
-        <div class="gallery-item" data-aos="zoom-in" onclick="openModal(0)">
-            <img src="Resourses/character.png" alt="SCS: Secret Cleaning Service">
-            <p>SCS: Secret Cleaning Service</p>
+    <div class="professional-container">
+        <!-- Left Side: Navigation Dots -->
+        <div class="work-navigation">
+            <ul>
+                <li data-index="0" onclick="selectWork(0)" class="active-dot"></li>
+                <li data-index="1" onclick="selectWork(1)"></li>
+                <li data-index="2" onclick="selectWork(2)"></li>
+            </ul>
         </div>
-    </div>
-    
-    <div>
-        <h3>Timeline</h3>
+        <div class="work-thumbnail" data-aos="zoom-in" onclick="openModal(0)">
+            <img src="Resourses/character.png" alt="SCS: Secret Cleaning Service">
+            <!-- <p>SCS: Secret Cleaning Service</p> -->
+        </div>
+        <!-- Center: Year -->
+        <div class="work-year">
+            <h2 class="work-date">2023</h2>
+        </div>
+        <!-- Right Side: Short Description -->
+        <div class="work-info" onclick="openModal(0)">
+            <h3>SCS: Secret Cleaning Service</h3>
+            <p>Practice in Rubens Games</p>
+            <p>Creating main character</p>
+            <p>Organic props</p>
+            <p>Unity Zbrush/Maya/Substance Painter</p>
+            <p>Team size: 6</p>
+        </div>
     </div>
 </section>
 

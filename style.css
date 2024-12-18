@@ -276,6 +276,112 @@ h2 {
 .close:hover {
     color: #fd9b06;
 }
+
+/* Professional Works Container */
+.professional-container {
+    display: flex;
+    justify-content: space-between; /* Размещает элементы с равными отступами */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    gap: 20px; /* Отступы между элементами */
+    position: relative; /* Для точной настройки дочерних элементов */
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+/* Navigation Dots */
+.work-navigation {
+    position: absolute;
+    left: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.work-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work-navigation li {
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.work-navigation li.active-dot {
+    background: var(--main-color);
+}
+
+.work-navigation li:hover {
+    background: var(--secondary-color);
+}
+.work-thumbnail {
+    position: absolute;
+    left: 10vw;
+
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+}.work-thumbnail img {
+    width: 200px;
+    border-radius: 10px;
+}
+.work-thumbnail img:hover {
+    transform: scale(1.05);;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Work Year Section */
+.work-year {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.work-date {
+
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    line-height: 1.2;
+}
+
+/* Work Info Section */
+.work-info {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 750px;
+    width: fit-content;
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.work-info h3 {
+    font-size: var(--font-size-lg);
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.work-info p {
+    font-size: var(--font-size-sm);
+    color: #666;
+    line-height: 1.6;
+}
+
 @media (max-width: 816px) {
     .hero {
         height: auto;
@@ -364,7 +470,6 @@ h2 {
 /* Carousel */
 .image-carousel img {
     width: 100%;
-    height: auto;
     object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
