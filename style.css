@@ -33,10 +33,10 @@ h2 {
 /* Header Section */
 
 #background-video {
-    
     width: 100%;
     height: auto;
     border-radius: 6px;
+    object-fit: cover;
 }
 
 .overlay {
@@ -296,7 +296,7 @@ h2 {
 
 #professional-works {
     position: relative;
-    padding: 100px 10%;
+    padding: 100px 5vw;
     color: #fff;
     background: radial-gradient(circle, #1e1e2f, #141414);
     text-align: center;
@@ -326,8 +326,6 @@ h2 {
 .work-navigation {
     position: absolute;
     left: 1vw;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .work-navigation ul {
@@ -376,9 +374,9 @@ h2 {
 .work-year {
     flex: 1;
     display: flex;
+    margin-left: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
 }
 
 .work-date {
@@ -419,8 +417,8 @@ h2 {
     }
 
     #background-video {
-        width: auto;
-        height: auto;
+        object-fit: cover;
+        height: 100vh;
     }
 
     .overlay {
@@ -431,9 +429,9 @@ h2 {
         background: rgba(0, 0, 0, 0.15); /* Полупрозрачный чёрный слой */
         z-index: -1;
     }
-    
+
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .hero .btn {
@@ -467,35 +465,147 @@ h2 {
 }
 
 @media (max-width: 600px) {
-    .hero h1 {
-        font-size: var(--font-size-md);
-        text-align: center;
+    /* Уменьшаем отступы в секциях */
+    section {
+        padding: 30px 10px;
+    }
+
+    /* Уменьшаем размер шрифта в заголовках */
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    /* Сокращаем размеры кнопок и текста */
+    .btn {
+        font-size: 0.8em;
+        padding: 10px 15px;
     }
 
     .hero-content {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
-    #background-video {
-        width: auto;
-        height: auto;
-        object-fit: cover;
-    }
+
     .video-container {
-        width: 90%;
-        margin: 0 auto;
+        flex: none;
+        width: 100%;
+        margin: 0;
     }
-    .gallery, .masonry-gallery {
-        gap: 8px;
+
+    .professional-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /* Для карточек галереи */
+    .gallery-item {
+        width: 100%;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
     }
 
     .modal-content {
-        width: 90%;
-        flex-direction: column;
+        width: 95%;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
-    .btn {
+    .modal-left img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .modal-right {
+        padding: 10px;
         font-size: 0.9em;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .work-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+    /* Убираем фиксированное меню */
+    .work-navigation {
+        position: relative;
+        top: auto;
+        transform: none;
+        left: auto;
+    }
+
+    .work-navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Преобразуем соцсети в вертикальный список */
+    .social-links {
+        flex-direction: column;
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .masonry-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Карусель на мобильных устройствах */
+    .carousel-buttons button {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .carousel-btn {
+        top: 50%;
+        font-size: 1.5em;
+        transform: translateY(-50%);
+    }
+    .modal-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-right {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .modal-content {
+        padding: 5vw;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .work-navigation {
+        display: none; /* Скрытие точек навигации на мобильных */
+    }
+
+    .carousel-buttons {
+        display: none; /* Скрытие кнопок карусели */
     }
 }
 
