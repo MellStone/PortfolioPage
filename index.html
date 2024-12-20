@@ -17,16 +17,16 @@
 </script>
 
 <header class="hero">
-    <div class="video-container">
-        <video autoplay muted loop id="background-video">
-            <source src="Resourses/360Spin.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div> <!-- Затемняющий слой -->
-    </div>
     <div class="hero-content">
         <div class="hero-left">
             <h1>Denys Zhernovyi</h1>
             <div class="hero-line"></div>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="Resourses/360Spin.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div> <!-- Затемняющий слой -->
         </div>
         <div class="hero-right">
             <p>3D Character Artist | Creating Unique Characters for Games</p>
@@ -38,6 +38,7 @@
 <!-- Professional Works Section -->
 <section id="professional-works">
     <h2>Professional Works</h2>
+    <div class="professional-background"></div>
     <div class="professional-container">
         <!-- Left Side: Navigation Dots -->
         <div class="work-navigation">
@@ -47,13 +48,13 @@
                 <li data-index="2" onclick="selectWork(2)"></li>
             </ul>
         </div>
-        <div class="work-thumbnail" data-aos="zoom-in" onclick="openModal(0)">
-            <img src="Resourses/character.png" alt="SCS: Secret Cleaning Service">
-            <!-- <p>SCS: Secret Cleaning Service</p> -->
-        </div>
         <!-- Center: Year -->
         <div class="work-year">
             <h2 class="work-date">2023</h2>
+        </div>
+        <div class="work-thumbnail" data-aos="zoom-in" onclick="openModal(0)">
+            <img src="Resourses/character.png" alt="SCS: Secret Cleaning Service">
+            <!-- <p>SCS: Secret Cleaning Service</p> -->
         </div>
         <!-- Right Side: Short Description -->
         <div class="work-info" onclick="openModal(0)">
@@ -61,6 +62,7 @@
             <p>Practice in Rubens Games</p>
             <p>Creating main character</p>
             <p>Organic props</p>
+            <p>Character Animations</p>
             <p>Unity Zbrush/Maya/Substance Painter</p>
             <p>Team size: 6</p>
         </div>
@@ -129,8 +131,8 @@
 <footer>
     <p>&copy; 2024 Denys Zhernovyi. All Rights Reserved.</p>
     <div class="social-links">
-        <a href="https://www.artstation.com/mellst0ne" target="_blank"><img src="artstation-icon.png" alt="ArtStation"></a>
-        <a href="https://www.linkedin.com/in/denys-zhernovyi/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://www.artstation.com/mellst0ne" target="_blank"><img src="Resourses/artstation-icon.png" alt="ArtStation"></a>
+        <a href="https://www.linkedin.com/in/denys-zhernovyi/" target="_blank"><img src="Resourses/linkedin-icon.png" alt="LinkedIn"></a>
     </div>
 </footer>
 
