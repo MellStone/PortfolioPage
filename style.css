@@ -34,7 +34,7 @@ h2 {
 
 #background-video {
     width: 100%;
-    height: auto;
+    height: 100vh;
     border-radius: 6px;
     object-fit: cover;
 }
@@ -85,13 +85,13 @@ h2 {
 
 .hero-left {
     flex: 1;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .hero-right {
     flex: 1;
     text-align: right;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .hero h1 {

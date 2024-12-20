@@ -2,7 +2,8 @@ const works = [
     {
         img: ["Resourses/character.png", "Resourses/Core.png", "Resourses/Chest.png", "Resourses/Hands.png", "Resourses/Forearms.png", "Resourses/Head.png", "Resourses/Leg.png", "Resourses/Rat.png"],
         title: "SCS: Secret Cleaning Service",
-        description: `<p>Internship at Rubens Games with organic modeling for Unity-based projects.</p>
+        description: ` <p>You can check the <a href="https://www.youtube.com/watch?v=YvLL_UlNWNg">trailer</a> </p>
+                    <p>Internship at Rubens Games with organic modeling for Unity-based projects.</p>
                     <p>For five months, I interned at Rubens Games, where my primary task was creating organic objects for a Unity-based project.</p>
                     <p>One of my most notable accomplishments during the internship was the complete creation of the game’s main character. I handled the entire process:</p>
                      <ul>
@@ -19,7 +20,8 @@ const works = [
         img: ["Resourses/this.png", "Resourses/queen_black.png", "Resourses/queen_white.png", "Resourses/queen_hp.png", "Resourses/slon_blackwhite.png",
             "Resourses/wieza_black.png", "Resourses/wieza_white.png", "Resourses/wieza_polycount.png", "Resourses/wieza_uvs.png", "Resourses/wieza_hp.png",],
         title: "Chesspeare",
-        description: `<p> Chesspeare is an academic project created during the second year of my university studies.
+        description: ` <p>You can check it on <a href="https://zoriagames.itch.io/chesspeare">itch.io</a> </p>
+                        <p> Chesspeare is an academic project created during the second year of my university studies.
                         I worked as a 3D character artist and was responsible for the full development cycle of five characters.</p>
                        <p>My work included:</p>
                         <ul>
@@ -36,7 +38,8 @@ const works = [
         img: ["Resourses/Portrait.0001.png", "Resourses/mellst0ne-portrait-0000.jpg", "Resourses/mellst0ne-details-0000.jpg", "Resourses/mellst0ne-details-0003.jpg", "Resourses/mellst0ne-details-0004.jpg",
             "Resourses/mellst0ne-mayapolycount.jpg", "Resourses/mellst0ne-mayauvs.jpg"],
         title: "Neo Tokyo: Exponential Reality",
-        description: `<p>This project has been one of the most time consuming and longest I have ever done.
+        description: ` <p>More on <a href="https://www.artstation.com/artwork/EvlEx2">ArtStation</a> </p>
+        <p>This project has been one of the most time consuming and longest I have ever done.
         I had to redesign it from zero, and many times I had to start creating parts of it from over again because I was not satisfied with the previous ones. I encountered difficulties at almost every stage.
             In addition, I also wanted to comply with all the requirements of the contest (in which I participated but something went wrong) Neo Tokyo: Exponential Reality,
             i.e. to fit everything into two texture sets of 4k size, maximum number of polygons 100k and that it would be rendered in real-time rendering. </p>`},
