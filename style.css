@@ -131,10 +131,12 @@ h2 {
 }
 /* Gallery */
 .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-items: center;
 }
 
 .gallery-item {
@@ -145,7 +147,9 @@ h2 {
 
 .gallery img {
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
@@ -167,6 +171,10 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s;
+}
+.masonry-item img:hover{
+    transform: scale(1.05);
 }
 
 /* Modal */
@@ -200,20 +208,26 @@ h2 {
     opacity: 1;
     transform: scale(1);
 }
+
+
 .modal-left {
     display: flex;
-    width: 70vw;
+    width: auto;
     min-height: 80vh;
+    border-radius: 8px;
     align-items: center;
     justify-content: center;
-    background-color: #342e2e;
+    background-color: rgba(0, 0, 0, 0.8);
     
 }
 
 .modal-left img {
-    max-width: 70vw;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
     max-height: 80vh; /* Изображение не выходит за пределы */
-    border-radius: 8px;
+
+    
 }
 
 .modal-right {
@@ -395,6 +409,11 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.work-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 .work-info h3 {
     font-size: 2rem;
@@ -515,8 +534,7 @@ h2 {
     }
 
     .modal-content {
-        width: 95%;
-        padding: 10px;
+        width: 95%; 
         box-sizing: border-box;
     }
 
@@ -579,12 +597,6 @@ h2 {
         font-size: 1.2em;
         padding: 10px;
     }
-
-    .carousel-btn {
-        top: 50%;
-        font-size: 1.5em;
-        transform: translateY(-50%);
-    }
     .modal-left img {
         width: 100%;
         height: auto;
@@ -617,9 +629,9 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 .carousel-btn {
+
     position: absolute;
-    top: 50%;
-    transform: translateY(10%);
+    top: 50vh;
     background: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный */
     color: white;
     border: none;
