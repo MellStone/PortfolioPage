@@ -57,7 +57,10 @@ function openModal(index) {
     currentIndex = index;
     currentImageIndex = 0;
     updateModalContent();
+    const modal = document.getElementById('work-modal');
     modal.style.display = 'flex';
+    // Добавляем класс 'open' для запуска анимации
+    setTimeout(() => modal.classList.add('open'), 10);
 }
 // Обработчики для пролистывания изображений
 document.getElementById('prev-image').addEventListener('click', () => {
